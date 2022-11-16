@@ -17,11 +17,9 @@
     }
 
     body {
-        display: flex;
-        justify-content: center;
-        width: calc(100vw - margin);
         background-color: var(--dark-700);
         color: white;
+        margin-top: 2rem;
     }
 
     .bi {
@@ -83,48 +81,74 @@
         text-align: center;
         gap: 3px;
     }
+
+    .pie-chart {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .pie-chart li {
+        margin-block: 1ch;
+    }
 </style>
 
 <body>
     <main>
-        <!-- IMAGEM DO RELATÓRIO -->
+        <div class="pie-chart">
+            <i class="bi bi-pie-chart-fill" style="font-size: 15rem; margin: 0;"></i>
+            <ul>
+                <li>Erro 1</li>
+                <li>Erro 2</li>
+                <li>Erro 3</li>
+                <li>Erro 4</li>
+                <li>Erro 5</li>
+            </ul>
+        </div>
     </main>
 
-    <div class="card-display">
-        <div class="card">
-            <div class="info">
-                <i class="bi bi-laptop"></i>
-                <p>Lia's Laptop</p>
+    <br><br>
+
+    <div style="display:flex;justify-content: center;">
+        <div class="card-display">
+            <div class="card">
+                <div class="info">
+                    <i class="bi bi-laptop"></i>
+                    <p>Lia's Laptop</p>
+                </div>
+                <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
             </div>
-            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
-        </div>
-        <div class="card">
-            <div class="info">
-                <i class="bi bi-pc-display"></i>
-                <p>Nacrai's PC</p>
+            <div class="card">
+                <div class="info">
+                    <i class="bi bi-pc-display"></i>
+                    <p>Nacrai's PC</p>
+                </div>
+                <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
             </div>
-            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
-        </div>
-        <div class="card">
-            <div class="info">
-                <i class="bi bi-phone"></i>
-                <p>Isa's cellphone</p>
+            <div class="card">
+                <div class="info">
+                    <i class="bi bi-phone"></i>
+                    <p>Isa's cellphone</p>
+                </div>
+                <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
             </div>
-            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
-        </div>
-        <div class="card">
-            <div class="info">
-                <i class="bi bi-umbrella"></i>
-                <p>Renato's Umbrella</p>
+            <div class="card">
+                <div class="info">
+                    <i class="bi bi-umbrella"></i>
+                    <p>Renato's Umbrella</p>
+                </div>
+                <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
             </div>
-            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
-        </div>
-        <div class="card">
-            <div class="info">
-                <i class="bi bi-rocket-takeoff-fill"></i>
-                <p>Priscila's ICBM</p>
+            <div class="card">
+                <div class="info">
+                    <i class="bi bi-rocket-takeoff-fill"></i>
+                    <p>Priscila's ICBM</p>
+                </div>
+                <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
             </div>
-            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
         </div>
     </div>
 </body>
