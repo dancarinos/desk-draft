@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+</head>
+
+<style>
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    :root {
+        --dark-700: hsl(0, 57%, 7%);
+        --dark-800: hsl(0, 0%, 43%);
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        width: calc(100vw - margin);
+        background-color: var(--dark-700);
+        color: white;
+    }
+
+    .bi {
+        display: flex;
+        width: min-content;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.5ch;
+    }
+
+    .card-display {
+        display: flex;
+        border: 0.1rem solid white;
+        border-radius: 1rem;
+        max-width: 80%;
+        padding: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-family: 'VT323', monospace;
+    }
+
+    .online {
+        display: flex;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 1ch;
+        align-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-block: 0.5rem;
+        padding-inline: 1rem;
+        background-color: hsl(350, 100%, 10%);
+        border-radius: 1rem;
+        width: 25%;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 25ch;
+        min-height: 4rem;
+        margin: 0;
+
+    }
+
+    .card>p {
+        margin-left: 1ch;
+        margin-right: 1ch;
+    }
+
+    .card>.info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3px;
+    }
+</style>
+
+<body>
+    <main>
+        <!-- IMAGEM DO RELATÓRIO -->
+    </main>
+
+    <div class="card-display">
+        <div class="card">
+            <div class="info">
+                <i class="bi bi-laptop"></i>
+                <p>Lia's Laptop</p>
+            </div>
+            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <i class="bi bi-pc-display"></i>
+                <p>Nacrai's PC</p>
+            </div>
+            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <i class="bi bi-phone"></i>
+                <p>Isa's cellphone</p>
+            </div>
+            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <i class="bi bi-umbrella"></i>
+                <p>Renato's Umbrella</p>
+            </div>
+            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
+        </div>
+        <div class="card">
+            <div class="info">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                <p>Priscila's ICBM</p>
+            </div>
+            <div class="online" style="color: green;"><i class="bi bi-circle-fill"></i>online</div>
+        </div>
+    </div>
+</body>
+</html>
